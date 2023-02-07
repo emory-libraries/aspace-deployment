@@ -1,0 +1,5 @@
+plugins:
+  - name: aspace_static_plugins
+    git: true
+    branch: "v0.1.0"
+    url: https://github.com/emory-libraries/aspace_static_plugins.git
