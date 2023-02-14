@@ -35,3 +35,4 @@ AppConfig[:container_management_labels] = [
 ]
 AppConfig[:pui_hide][:classification_badge] = true
 AppConfig[:pui_hide][:accession_badge] = true
+AppConfig[:pui_hide][:record_badge] = true
