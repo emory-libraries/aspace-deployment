@@ -31,3 +31,5 @@ AppConfig[:container_management_labels] = [
         "checked" => true,
         "disabled" => true}}
 ]
+AppConfig[:pui_hide][:classification_badge] = true
+AppConfig[:pui_hide][:accession_badge] = true
