@@ -7,3 +7,7 @@ plugins:
     git: true
     branch: "emory-as-300"
     url: https://github.com/emory-libraries/container_management_labels.git
+  - name: lcnaf
+    git: true
+    branch: "v2.0.0"
+    url: https://github.com/emory-libraries/lcnaf.git
