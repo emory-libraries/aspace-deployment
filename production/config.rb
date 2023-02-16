@@ -33,3 +33,8 @@ AppConfig[:container_management_labels] = [
         "checked" => true,
         "disabled" => true}}
 ]
+AppConfig[:pui_hide][:classification_badge] = true
+AppConfig[:pui_hide][:accession_badge] = true
+AppConfig[:pui_hide][:record_badge] = true
+AppConfig[:pui_staff_link_mode] = 'readonly'
+AppConfig[:container_management_extent_calculator] = { :report_volume => false, :unit => :feet, :decimal_places => 3 }
