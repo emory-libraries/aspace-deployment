@@ -40,7 +40,7 @@ At Emory Libraries, we manage all ArchivesSpace UI customizations under one plug
 ```
 Hi,
 
-We would like to deploy [version_to_deploy] of the Emory ArchivesSpace plugin to Emory's ArchivesSpace Test environment. Attached are the files needed for the deploy:
+We would like to deploy a new version of the Emory ArchivesSpace plugin to Emory's ArchivesSpace [environment name] environment. Attached are the files needed for the deploy:
 
 - config.rb: lists all the configuration variables of the plugin.
 - plugins.yml: lists the plugins to include. Each plugin has a name, git tag/branch, and git repository URL.
