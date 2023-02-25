@@ -33,8 +33,8 @@ At Emory Libraries, we manage all ArchivesSpace UI customizations under one plug
 3. Verify the `plugins.yml` of the environment you are deploying to. Insure all plugins required are listed, with a correct version/branch and repository url.
 4. Verify the `config.rb` of the environment you are deploying to. Ensure all configuration customizations are included, and ensure `AppConfig[:emory_plugins_version]` is set to the version of the [aspace_static_plugins](https://github.com/emory-libraries/aspace_static_plugins) plugin you are deploying (listed under `plugins.yml`).
 5. Create a new release of this repository and choose a tag that follows semantic versioning.
-6. Download the `config.rb` that matches the release tag and environment you are deploying. Rename the file to `config-production-v0.2.1.rb` to clarify the environment as well as the release version of this repository.
-7. Download the `plugins.yml` that matches the release tag and environment you are deploying. Rename the file to `plugins-production-v0.2.1.yml` to clarify the environment as well as the release version of this repository.
+6. Download the `config.rb` that matches the release tag and environment you are deploying. Rename the file to `config-environment-release_version.rb` to clarify the environment as well as the release version of this repository e.g. `config-production-v0.2.1.rb`.
+7. Download the `plugins.yml` that matches the release tag and environment you are deploying. Rename the file to `plugins-environment-release_version.yml` to clarify the environment as well as the release version of this repository e.g. `plugins-production-v0.2.1.yml`.
 8. Reach out to the Lyrasis team by email, using the following template. Make sure you attach the `config.rb` and `plugins.yml` files downloaded above.
 
 ```
@@ -42,8 +42,8 @@ Hi,
 
 We would like to deploy [version_to_deploy] of the Emory ArchivesSpace plugin to Emory's ArchivesSpace Test environment. Attached are the files needed for the deploy:
 
-- config.rb: the configuration file that contains all the configuration variables associated with the plugin.
-- plugins.yml: lists the plugins to include as well as each version and git repository of each plugin.
+- config.rb: lists all the configuration variables of the plugin.
+- plugins.yml: lists the plugins to include. Each plugin has a name, git tag/branch, and git repository URL.
 
 Please let us know if you have any questions and thank you for all your help!
 
