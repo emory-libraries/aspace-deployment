@@ -50,7 +50,7 @@ Please let us know if you have any questions and thank you for all your help!
 Best,
 ```
 9. After sending the email, you will receive confirmation from the Lyrasis team in the form of an open support ticket. If the Lyrasis team runs into any issues deploying the new version, they will reach out to you through that support ticket.
-10. Once the new version is deployed, make sure to inform Emory staff who manage ArchivesSpace.
+10. Once the new version is deployed, inform Emory staff who manage ArchivesSpace.
 
 
 
