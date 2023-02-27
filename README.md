@@ -28,14 +28,17 @@ At Emory Libraries, we manage all ArchivesSpace UI customizations under one plug
 
 ### Deployment Process
 
+#### Pre-deployment
 1. Create a new release for [aspace_static_plugins](https://github.com/emory-libraries/aspace_static_plugins) if the latest release does not contain the most up to date changes, and ensure the new release has a tag number that follows semantic versioning. You can use the following [instructions](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) to create a new release.
-2. Confirm which environment you are deploying to e.g. test, production
-3. Verify the `plugins.yml` of the environment you are deploying to. Insure all plugins required are listed, with a correct version/branch and repository url.
-4. Verify the `config.rb` of the environment you are deploying to. Ensure all configuration customizations are included, and ensure `AppConfig[:emory_plugins_version]` is set to the version of the [aspace_static_plugins](https://github.com/emory-libraries/aspace_static_plugins) plugin you are deploying (listed under `plugins.yml`).
-5. Create a new release of this repository and choose a tag that follows semantic versioning. You will use this new release to complete the following two tasks.
-6. Download the `config.rb` that matches the release tag above and environment you are deploying.
-7. Download the `plugins.yml` that matches the release tag and environment you are deploying.
-8. Reach out to the Lyrasis team by email, using the following template. Make sure you attach the `config.rb` and `plugins.yml` files downloaded above.
+2. Confirm which environment you are deploying to e.g. test, production.
+
+#### Deployment
+
+1. Verify the `plugins.yml` of the environment you are deploying to. Insure all plugins required are listed, with a correct version/branch and repository url.
+2. Verify the `config.rb` of the environment you are deploying to. Ensure all configuration customizations are included, and ensure `AppConfig[:emory_plugins_version]` is set to the new version of this repository that you will create in the next task e.g. if the new release of this repository will have tag "v2.1.0",  `AppConfig[:emory_plugins_version]` should be set to `v2.1.0` before you create the release.
+3. Create a new release of this repository with the same tag you set `AppConfig[:emory_plugins_version]` to earlier.
+4. Download the `config.rb` and `plugins.yml` that match the release tag above and environment you are deploying.
+5. Reach out to the Lyrasis team by email, using the following template. Make sure you attach the `config.rb` and `plugins.yml` files downloaded above.
 
 ```
 Hi,
@@ -49,8 +52,9 @@ Please let us know if you have any questions and thank you for all your help!
 
 Best,
 ```
-9. After sending the email, you will receive confirmation from the Lyrasis team in the form of an open support ticket. If the Lyrasis team runs into any issues deploying the new version, they will reach out to you through that support ticket.
-10. Once the new version is deployed, inform Emory staff who manage ArchivesSpace.
+
+6. After sending the email, you will receive confirmation from the Lyrasis team in the form of an open support ticket. If the Lyrasis team runs into any issues deploying the new version, they will reach out to you through that support ticket.
+7. Once the new version is deployed, inform Emory staff who manage ArchivesSpace.
 
 
 
