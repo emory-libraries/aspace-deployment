@@ -35,7 +35,10 @@ At Emory Libraries, we manage all ArchivesSpace UI customizations under one plug
 #### Deployment
 
 1. Verify the `plugins.yml` of the environment you are deploying to. Insure all plugins required are listed, with a correct version/branch and repository url.
-2. Verify the `config.rb` of the environment you are deploying to. Ensure all configuration customizations are included, and ensure `AppConfig[:emory_plugins_version]` is set to the new version of this repository that you will create in the next task e.g. if the new release of this repository will have tag "v2.1.0",  `AppConfig[:emory_plugins_version]` should be set to `v2.1.0` before you create the release.
+2. Verify the `config.rb` of the environment you are deploying to. Ensure all configuration customizations are included, and ensure `AppConfig[:emory_plugins_version]` is set to the new version of this repository that you will create in the next task e.g. if the new release of this repository will have tag "v2.1.0",  `AppConfig[:emory_plugins_version]` should be set to `v2.1.0` before you create the release. 
+
+**Note**: This repository's version and `aspace_static_plugins` are not required to match, and `AppConfig[:emory_plugins_version]` corresponds to the version of this repository that you are deploying.
+
 3. Create a new release of this repository with the same tag you set `AppConfig[:emory_plugins_version]` to earlier.
 4. Download the `config.rb` and `plugins.yml` that match the release tag above and environment you are deploying.
 5. Reach out to the Lyrasis team by email, using the following template. Make sure you attach the `config.rb` and `plugins.yml` files downloaded above.
