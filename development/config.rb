@@ -39,3 +39,49 @@ AppConfig[:pui_hide][:accession_badge] = true
 AppConfig[:pui_hide][:record_badge] = true
 AppConfig[:pui_staff_link_mode] = 'readonly'
 AppConfig[:container_management_extent_calculator] = { :report_volume => false, :unit => :feet, :decimal_places => 3 }
+AppConfig[:record_inheritance] = {
+  :archival_object => {
+    :inherited_fields => [
+                          {
+                            :property => 'title',
+                            :inherit_directly => false
+                          },
+                          {
+                            :property => 'component_id',
+                            :inherit_directly => false
+                          },
+                          {
+                            :property => 'lang_materials',
+                            :inherit_directly => false
+                          },
+                          {
+                            :property => 'dates',
+                            :inherit_directly => false
+                          },
+                          {
+                            :property => 'extents',
+                            :inherit_directly => false
+                          },
+                          {
+                            :property => 'linked_agents',
+                            :inherit_if => proc {|json| json.select {|j| j['role'] == 'creator'} },
+                            :inherit_directly => false
+                          },
+                          {
+                            :property => 'notes',
+                            :inherit_if => proc {|json| json.select {|j| j['type'] == 'accessrestrict'} },
+                            :inherit_directly => false
+                          },
+                          {
+                            :property => 'notes',
+                            :inherit_if => proc {|json| json.select {|j| j['type'] == 'scopecontent'} },
+                            :inherit_directly => false
+                          },
+                          {
+                            :property => 'notes',
+                            :inherit_if => proc {|json| json.select {|j| j['type'] == 'langmaterial'} },
+                            :inherit_directly => false
+                          },
+                         ]
+  }
+}
