@@ -23,6 +23,8 @@ plugins:
     url: https://github.com/emory-libraries/aspace_static_plugins.git # url of the plugin's git repository
 ```
 
+- `frontend/locales/en.yml`: lists our desired user_defined fields to be displayed in edit and new forms.
+
 ## Plugins
 
 At Emory Libraries, we manage all ArchivesSpace UI customizations under one plugin, [aspace_static_plugins](https://github.com/emory-libraries/aspace_static_plugins). We also use other plugins listed under `plugins.yml` of each environment e.g. [container_management_labels](https://github.com/emory-libraries/container_management_labels).
@@ -40,8 +42,8 @@ At Emory Libraries, we manage all ArchivesSpace UI customizations under one plug
 
 ### Deployment
 
-1. Download the `config.rb` and `plugins.yml` that match the new release of this repository and environment you are deploying.
-1. Reach out to the Lyrasis team by email. CC the Emory product owner on this email. Make sure you attach the `config.rb` and `plugins.yml` files downloaded above. You can use the template below.
+1. Download the `config.rb`, `plugins.yml`, and `frontend/locales/en.yml` that match the new release of this repository and environment you are deploying.
+1. Reach out to the Lyrasis team by email. CC the Emory product owner on this email. Make sure you attach the `config.rb`, `plugins.yml`, and `frontend/locales/en.yml` files downloaded above. You can use the template below.
 1. After sending the email, you will receive confirmation from the Lyrasis team in the form of an open support ticket. If the Lyrasis team runs into any issues deploying the new version, they will reach out to you through that support ticket.
 1. Once the new version is deployed, inform Emory staff who manage ArchivesSpace.
 
@@ -52,6 +54,7 @@ We would like to deploy a new version of the Emory ArchivesSpace plugin to Emory
 
 - config.rb: lists all the configuration variables of the plugin.
 - plugins.yml: lists the plugins to include. Each plugin has a name, git tag/branch, and git repository URL.
+- frontend/locales/en.yml: lists our desired user_defined fields to be displayed in edit and new forms.
 
 Please let us know if you have any questions and thank you for all your help!
 
