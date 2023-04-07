@@ -1,4 +1,4 @@
-AppConfig[:plugins] = ['aspace_static_plugins', 'container_management_labels', 'lcnaf']
+AppConfig[:plugins] = ['aspace_static_plugins', 'container_management_labels', 'lcnaf', 'aeon-fulfillment-plugin']
 AppConfig[:emory_ga_tracking_public] = ''
 AppConfig[:pui_branding_img] = '/assets/images/shield.svg'
 AppConfig[:pui_branding_img_alt_text] = 'Emory University Libraries Logo'
@@ -83,5 +83,51 @@ AppConfig[:record_inheritance] = {
                             :inherit_directly => false
                           },
                          ]
+  }
+}
+
+# Aeon Fulfillment Plugin Settings
+AppConfig[:aeon_fulfillment] = {
+  "pitts" => {
+      :aeon_web_url => "https://emorytest.aeon.atlas-sys.com/aeon/aeon.dll",
+      :aeon_return_link_label => "ArchivesSpace",
+      :aeon_external_system_id => "ArchivesSpace",
+      :top_container_mode => true,
+      :requests_permitted_for_containers_only => true
+  },
+  "eua" => {
+      :aeon_web_url => "https://emorytest.aeon.atlas-sys.com/aeon/aeon.dll",
+      :aeon_return_link_label => "ArchivesSpace",
+      :aeon_external_system_id => "ArchivesSpace",
+      :top_container_mode => true,
+      :requests_permitted_for_containers_only => true
+  },
+  "law" => {
+      :aeon_web_url => "https://emorytest.aeon.atlas-sys.com/aeon/aeon.dll",
+      :aeon_return_link_label => "ArchivesSpace",
+      :aeon_external_system_id => "ArchivesSpace",
+      :top_container_mode => true,
+      :requests_permitted_for_containers_only => true
+  },
+  "whscl" => {
+      :aeon_web_url => "https://emorytest.aeon.atlas-sys.com/aeon/aeon.dll",
+      :aeon_return_link_label => "ArchivesSpace",
+      :aeon_external_system_id => "ArchivesSpace",
+      :top_container_mode => true,
+      :requests_permitted_for_containers_only => true
+  },
+  "oxford" => {
+      :aeon_web_url => "https://emorytest.aeon.atlas-sys.com/aeon/aeon.dll",
+      :aeon_return_link_label => "ArchivesSpace",
+      :aeon_external_system_id => "ArchivesSpace",
+      :top_container_mode => true,
+      :requests_permitted_for_containers_only => true
+  },
+  "rose" => {
+      :aeon_web_url => "https://emorytest.aeon.atlas-sys.com/aeon/aeon.dll",
+      :aeon_return_link_label => "ArchivesSpace",
+      :aeon_external_system_id => "ArchivesSpace",
+      :top_container_mode => true,
+      :requests_permitted_for_containers_only => true
   }
 }

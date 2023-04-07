@@ -11,3 +11,7 @@ plugins:
     git: true
     branch: "v2.0.0"
     url: https://github.com/emory-libraries/lcnaf.git
+  - name: aeon-fulfillment-plugin
+    git: true
+    branch: "prerelease"
+    url: https://github.com/emory-libraries/aeon-fulfillment-plugin.git
