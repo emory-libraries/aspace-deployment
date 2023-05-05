@@ -1,4 +1,5 @@
-AppConfig[:plugins] = ['aspace_static_plugins', 'container_management_labels', 'lcnaf']
+# AppConfig[:plugins] = ['aspace_static_plugins', 'container_management_labels', 'lcnaf']
+# AppConfig[:public_url] = "https://archives.libraries.emory.edu"
 AppConfig[:emory_ga_tracking_public] = 'G-83TR9951KC'
 AppConfig[:pui_branding_img] = '/assets/images/shield.svg'
 AppConfig[:pui_branding_img_alt_text] = 'Emory University Libraries Logo'
