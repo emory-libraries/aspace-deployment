@@ -1,7 +1,7 @@
 plugins:
   - name: aspace_static_plugins
     git: true
-    branch: "v1.0.0"
+    branch: "v1.0.1"
     url: https://github.com/emory-libraries/aspace_static_plugins.git
   - name: container_management_labels
     git: true
@@ -19,4 +19,3 @@ plugins:
     git: true
     branch: "main"
     url: https://github.com/emory-libraries/uga-archivesspace-reports.git
-
