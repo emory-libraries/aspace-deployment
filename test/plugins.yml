@@ -15,3 +15,8 @@ plugins:
     git: true
     branch: "prerelease"
     url: https://github.com/emory-libraries/aeon-fulfillment-plugin.git
+  - name: uga-archivesspace-reports
+    git: true
+    branch: "main"
+    url: https://github.com/emory-libraries/uga-archivesspace-reports.git
+
