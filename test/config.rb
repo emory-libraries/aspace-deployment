@@ -3,7 +3,7 @@
 AppConfig[:emory_ga_tracking_public] = 'G-83TR9951KC'
 AppConfig[:pui_branding_img] = '/assets/images/shield.svg'
 AppConfig[:pui_branding_img_alt_text] = 'Emory University Libraries Logo'
-AppConfig[:emory_plugins_version] = 'v2023-05-08'
+AppConfig[:emory_plugins_version] = 'v2023-05-15'
 AppConfig[:container_management_labels_pagesize] = {
     "avery-5163" => {
         "size" => "letter",
