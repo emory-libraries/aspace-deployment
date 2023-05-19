@@ -13,7 +13,7 @@ plugins:
     url: https://github.com/emory-libraries/lcnaf.git
   - name: aeon-fulfillment-plugin
     git: true
-    branch: "prerelease"
+    branch: "20230515"
     url: https://github.com/emory-libraries/aeon-fulfillment-plugin.git
   - name: uga-archivesspace-reports
     git: true
