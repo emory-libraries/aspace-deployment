@@ -1,7 +1,7 @@
 plugins:
   - name: aspace_static_plugins
     git: true
-    branch: "v1.0.2"
+    branch: "v2.0.0"
     url: https://github.com/emory-libraries/aspace_static_plugins.git
   - name: container_management_labels
     git: true
