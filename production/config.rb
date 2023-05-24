@@ -1,4 +1,4 @@
-# AppConfig[:plugins] = ['aspace_static_plugins', 'container_management_labels', 'lcnaf']
+# AppConfig[:plugins] = ['aspace_static_plugins', 'container_management_labels', 'lcnaf', 'aeon-fulfillment-plugin', 'uga-archivesspace-reports']
 # AppConfig[:public_url] = "https://archives.libraries.emory.edu"
 AppConfig[:emory_ga_tracking_public] = 'G-83TR9951KC'
 AppConfig[:pui_branding_img] = '/assets/images/shield.svg'
@@ -84,5 +84,69 @@ AppConfig[:record_inheritance] = {
                             :inherit_directly => false
                           },
                          ]
+  }
+}
+
+# Aeon Fulfillment Plugin Settings
+AppConfig[:aeon_fulfillment] = {
+  "pitts" => {
+    :aeon_site_code => "THEOLOGYEU",
+    :aeon_web_url => "https://aeon.library.emory.edu/Logon",
+    :aeon_return_link_label => "Return to ArchivesSpace",
+    :aeon_external_system_id => "ArchivesSpace",
+    :top_container_mode => true,
+    :requests_permitted_for_containers_only => true,
+    :request_in_new_tab => true,
+    :hide_button_for_access_restriction_types => ['Restricted']
+  },
+  "eua" => {
+    :aeon_site_code => "MARBLEU",
+    :aeon_web_url => "https://aeon.library.emory.edu/Logon",
+    :aeon_return_link_label => "Return to ArchivesSpace",
+    :aeon_external_system_id => "ArchivesSpace",
+    :top_container_mode => true,
+    :requests_permitted_for_containers_only => true,
+    :request_in_new_tab => true,
+    :hide_button_for_access_restriction_types => ['Restricted']
+  },
+  "law" => {
+    :aeon_site_code => "LAWEU",
+    :aeon_web_url => "https://aeon.library.emory.edu/Logon",
+    :aeon_return_link_label => "Return to ArchivesSpace",
+    :aeon_external_system_id => "ArchivesSpace",
+    :top_container_mode => true,
+    :requests_permitted_for_containers_only => true,
+    :request_in_new_tab => true,
+    :hide_button_for_access_restriction_types => ['Restricted']
+  },
+  "whscl" => {
+    :aeon_site_code => "HEALTHEU",
+    :aeon_web_url => "https://aeon.library.emory.edu/Logon",
+    :aeon_return_link_label => "Return to ArchivesSpace",
+    :aeon_external_system_id => "ArchivesSpace",
+    :top_container_mode => true,
+    :requests_permitted_for_containers_only => true,
+    :request_in_new_tab => true,
+    :hide_button_for_access_restriction_types => ['Restricted']
+  },
+  "oxford" => {
+    :aeon_site_code => "OXFORDEU",
+    :aeon_web_url => "https://aeon.library.emory.edu/Logon",
+    :aeon_return_link_label => "Return to ArchivesSpace",
+    :aeon_external_system_id => "ArchivesSpace",
+    :top_container_mode => true,
+    :requests_permitted_for_containers_only => true,
+    :request_in_new_tab => true,
+    :hide_button_for_access_restriction_types => ['Restricted']
+  },
+  "rose" => {
+    :aeon_site_code => "MARBLEU",
+    :aeon_web_url => "https://aeon.library.emory.edu/Logon",
+    :aeon_return_link_label => "Return to ArchivesSpace",
+    :aeon_external_system_id => "ArchivesSpace",
+    :top_container_mode => true,
+    :requests_permitted_for_containers_only => true,
+    :request_in_new_tab => true,
+    :hide_button_for_access_restriction_types => ['Restricted']
   }
 }
