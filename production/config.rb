@@ -1,10 +1,10 @@
 # AppConfig[:plugins] = ['aspace_static_plugins', 'container_management_labels', 'lcnaf', 'aeon-fulfillment-plugin', 'uga-archivesspace-reports']
 # AppConfig[:public_url] = "https://archives.libraries.emory.edu"
-# AppConfig[:archivesspace_version] = "3.5.0"
+# AppConfig[:archivesspace_version] = "3.5.1"
 AppConfig[:emory_ga_tracking_public] = 'G-83TR9951KC'
 AppConfig[:pui_branding_img] = '/assets/images/shield.svg'
 AppConfig[:pui_branding_img_alt_text] = 'Emory University Libraries Logo'
-AppConfig[:emory_plugins_version] = 'v2023-07-10'
+AppConfig[:emory_plugins_version] = 'v2024-08-12'
 AppConfig[:container_management_labels_pagesize] = {
     "avery-5163" => {
         "size" => "letter",
