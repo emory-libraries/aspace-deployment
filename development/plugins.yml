@@ -5,15 +5,15 @@ plugins:
     url: https://github.com/emory-libraries/aspace_static_plugins.git
   - name: container_management_labels
     git: true
-    branch: "emory-as-300"
+    branch: "emory-as-4.0"
     url: https://github.com/emory-libraries/container_management_labels.git
   - name: lcnaf
     git: true
-    branch: "v2.0.0"
+    branch: "v3.0.1"
     url: https://github.com/emory-libraries/lcnaf.git
   - name: aeon-fulfillment-plugin
     git: true
-    branch: "20230515"
+    branch: "20250617"
     url: https://github.com/emory-libraries/aeon-fulfillment-plugin.git
   - name: uga-archivesspace-reports
     git: true
