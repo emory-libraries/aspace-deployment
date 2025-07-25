@@ -1,6 +1,6 @@
 AppConfig[:plugins] = ['aspace_static_plugins', 'container_management_labels', 'lcnaf', 'aeon-fulfillment-plugin', 'uga-archivesspace-reports']
 AppConfig[:public_url] = "http://localhost:3001"
-# AppConfig[:archivesspace_version] = "4.1.0"
+# AppConfig[:archivesspace_version] = "4.1.1"
 AppConfig[:emory_ga_tracking_public] = ''
 AppConfig[:pui_branding_img] = '/assets/images/shield.svg'
 AppConfig[:pui_branding_img_alt_text] = 'Emory University Libraries Logo'
